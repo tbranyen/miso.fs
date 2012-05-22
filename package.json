@@ -1,0 +1,21 @@
+{
+  "author": "Tim Branyen <tim@tabdeveloper.com> (@tbranyen)",
+  "name": "miso.fs",
+  "description": "A Miso Dataset FileSystem Importer.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tbranyen/miso.fs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tbranyen/miso.fs.git"
+  },
+  "main": "plugin/index",
+  "dependencies": {
+    "miso.dataset": "0.1.2",
+    "underscore": "1.3.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "~0.6"
+  }
+}
