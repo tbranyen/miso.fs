@@ -2,7 +2,7 @@
 var fs = require("fs");
 var path = require("path");
 // Underscore utility
-var _ = require("underscore");
+var _ = require("lodash");
 // Miso library
 var Miso = require("miso.dataset");
 
@@ -14,14 +14,14 @@ var Miso = require("miso.dataset");
  *   options
  *     path - File path to load
  */
-Miso.Importers.Filesystem = function(options) {
+Miso.Dataset.Importers.Filesystem = function(options) {
   options = options || {};
 
   // Ensure the filepath is absolute
   this.path = path.resolve(options.path);
 };
 
-_.extend(Miso.Importers.Filesystem.prototype, {
+_.extend(Miso.Dataset.Importers.Filesystem.prototype, {
   fetch: function(options) {
     fs.readFile(this.path, function(err, contents) {
       if (err) {
